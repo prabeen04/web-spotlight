@@ -5,7 +5,7 @@
     "main": "dist/index.js",
     "repository": {
         "type": "git",
-        "url": "https://github.com/prabeen04/explorer"
+        "url": "https://github.com/prabeen04/web-spotlight"
     },
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
