@@ -17,12 +17,12 @@ module.exports = {
 
   module: {
     rules: [
-      // we use babel-loader to load our jsx and tsx files
+      // we use ts-loader to load our jsx and tsx files
       {
         test: /\.(ts|js)x?$/,
         exclude: /node_modules/,
         use: {
-          loader: "babel-loader"
+          loader: "ts-loader"
         }
       },
 
