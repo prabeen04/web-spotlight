@@ -8,7 +8,9 @@ module.exports = {
   // and output it into /dist as bundle.js
   output: {
     path: path.join(__dirname, "/dist"),
-    filename: "index.js"
+    filename: "index.js",
+    libraryTarget: "umd",
+    umdNamedDefine: true
   },
 
   // adding .ts and .tsx to resolve.extensions will help babel look for .ts and .tsx files to transpile
