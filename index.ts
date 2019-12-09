@@ -12,4 +12,5 @@ export function getHTML() {
   let head = document.createElement('h1')
   head.innerText = 'Header from web Spotlight'
   elm.appendChild(head)
+  document.body.appendChild(elm)
 }

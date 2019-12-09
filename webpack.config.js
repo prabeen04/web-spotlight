@@ -1,14 +1,16 @@
 const path = require("path");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
+
 module.exports = {
-  mode: "production",
+  mode: "development",
   // webpack will take the files from ./src/index
-  entry: "./index",
+  entry: "./index.ts",
 
   // and output it into /dist as bundle.js
   output: {
     path: path.join(__dirname, "/dist"),
-    filename: "index.js"
+    filename: "index.js",
+    libraryTarget: "umd",
+    umdNamedDefine: true
   },
 
   // adding .ts and .tsx to resolve.extensions will help babel look for .ts and .tsx files to transpile
@@ -23,7 +25,10 @@ module.exports = {
         test: /\.(ts|js)x?$/,
         exclude: /node_modules/,
         use: {
-          loader: "ts-loader"
+          loader: "awesome-typescript-loader",
+          options: {
+            configFile: "tsconfig.json"
+          }
         }
       },
 
@@ -33,5 +38,6 @@ module.exports = {
         use: ["style-loader", "css-loader"]
       }
     ]
-  }
+  },
+  target: "web"
 };
