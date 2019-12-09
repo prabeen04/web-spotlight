@@ -1,6 +1,7 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 module.exports = {
+  mode: "production",
   // webpack will take the files from ./src/index
   entry: "./index",
 
@@ -33,9 +34,4 @@ module.exports = {
       }
     ]
   }
-  // plugins: [
-  //   new HtmlWebpackPlugin({
-  //     template: "./src/index.html"
-  //   })
-  // ]
 };
