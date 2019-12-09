@@ -23,7 +23,7 @@ module.exports = {
         test: /\.(ts|js)x?$/,
         exclude: /node_modules/,
         use: {
-          loader: "ts-loader",
+          loader: "awesome-typescript-loader",
           options: {
             configFile: "tsconfig.json"
           }
@@ -36,5 +36,6 @@ module.exports = {
         use: ["style-loader", "css-loader"]
       }
     ]
-  }
+  },
+  target: "web"
 };

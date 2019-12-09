@@ -53,20 +53,24 @@
     r((r.s = 0));
 })([
   function(e, t, r) {
-    "use strict";
-    Object.defineProperty(t, "__esModule", { value: !0 }),
-      (t.explore = function() {
-        return 6;
-      }),
-      (t.spotlight = function() {
-        return "web-spotlight";
-      }),
-      (t.getHTML = function() {
-        if (!window.document)
-          throw new Error("Browser not detected!. run in browser");
-        let e = document.createElement("div"),
-          t = document.createElement("h1");
-        (t.innerText = "Header from web Spotlight"), e.appendChild(t);
-      });
+    var n;
+    void 0 ===
+      (n = function(e, t) {
+        "use strict";
+        Object.defineProperty(t, "__esModule", { value: !0 }),
+          (t.explore = function() {
+            return 6;
+          }),
+          (t.spotlight = function() {
+            return "web-spotlight";
+          }),
+          (t.getHTML = function() {
+            if (!window.document)
+              throw new Error("Browser not detected!. run in browser");
+            let e = document.createElement("div"),
+              t = document.createElement("h1");
+            (t.innerText = "Header from web Spotlight"), e.appendChild(t);
+          });
+      }.apply(t, [r, t])) || (e.exports = n);
   }
 ]);
