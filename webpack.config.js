@@ -1,9 +1,9 @@
 const path = require("path");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
+
 module.exports = {
-  mode: "production",
+  mode: "development",
   // webpack will take the files from ./src/index
-  entry: "./index",
+  entry: "./index.ts",
 
   // and output it into /dist as bundle.js
   output: {
@@ -23,7 +23,10 @@ module.exports = {
         test: /\.(ts|js)x?$/,
         exclude: /node_modules/,
         use: {
-          loader: "ts-loader"
+          loader: "ts-loader",
+          options: {
+            configFile: "tsconfig.json"
+          }
         }
       },
 
