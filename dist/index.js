@@ -104,7 +104,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\nfunction explore() {\r\n    return 6;\r\n}\r\nexports.explore = explore;\r\nfunction spotlight() {\r\n    return 'web-spotlight';\r\n}\r\nexports.spotlight = spotlight;\r\nfunction getHTML(str) {\r\n    if (!window.document) {\r\n        throw new Error('Browser not detected!. run in browser');\r\n    }\r\n    var elm = document.createElement('div');\r\n    var head = document.createElement('h1');\r\n    head.innerText = str || 'N/A';\r\n    elm.appendChild(head);\r\n    document.body.appendChild(elm);\r\n}\r\nexports.getHTML = getHTML;\r\n\n\n//# sourceURL=webpack:///./index.ts?");
+eval("\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\nfunction explore() {\r\n    return 6;\r\n}\r\nexports.explore = explore;\r\nfunction spotlight() {\r\n    return 'web-spotlight';\r\n}\r\nexports.spotlight = spotlight;\r\nfunction getHTML(node, element) {\r\n    if (!window.document) {\r\n        throw new Error('Browser not detected!. run in browser');\r\n    }\r\n    node.appendChild(element);\r\n}\r\nexports.getHTML = getHTML;\r\n\n\n//# sourceURL=webpack:///./index.ts?");
 
 /***/ })
 
