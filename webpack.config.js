@@ -2,6 +2,7 @@ const path = require("path");
 
 module.exports = {
   mode: "development",
+  devtool: "inline-sourcemap",
   entry: "./index.ts",
   output: {
     path: path.join(__dirname, "/dist"),
