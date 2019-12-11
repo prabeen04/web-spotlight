@@ -1,9 +1,6 @@
-export function getHTML(node: HTMLElement, element: HTMLElement): void {
-  console.log(node)
-  console.log(element)
-  debugger
+export function getHTML(node: HTMLDivElement, element: HTMLElement): void {
   if (!window.document) {
     throw new Error('Browser not detected!. run in browser')
   }
-  node.appendChild(element)
+  node.append(element)
 }
