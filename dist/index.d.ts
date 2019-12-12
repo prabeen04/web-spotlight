@@ -1,1 +1,1 @@
-export declare function getHTML(node: HTMLDivElement, element: HTMLElement): void;
+export declare function getHTML(node: HTMLDivElement, element: any): void;

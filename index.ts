@@ -1,6 +1,8 @@
-export function getHTML(node: HTMLDivElement, element: HTMLElement): void {
+import * as React from "react";
+
+export function getHTML(node: HTMLDivElement, element: any): void {
   if (!window.document) {
     throw new Error('Browser not detected!. run in browser')
   }
-  node.append(element)
+  node.appendChild(element)
 }
